@@ -53,7 +53,7 @@ export const DocumentList = ({
    }
 
   return (
-    <div>
+    <>
       <p
         style={{
           paddingLeft:level ? `${(level * 12) + 25}px` : undefined
@@ -71,8 +71,8 @@ export const DocumentList = ({
           <Item
             id={document._id}
             onClick={() => onRedirect(document._id)}
-            label = {document.title}
-            icon = {FileIcon}
+            label={document.title}
+            icon={FileIcon}
             documentIcon={document.icon}
             active={params.documentId === document._id}
             level={level}
@@ -87,6 +87,6 @@ export const DocumentList = ({
           )}
         </div>
       ))}
-    </div>
+    </>
   )
 };
