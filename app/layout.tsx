@@ -19,7 +19,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Scribe",
+  title: "Secondbrain",
   description: "The connected workspace where better faster work happens",
   icons: [
     {

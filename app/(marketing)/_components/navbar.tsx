@@ -32,7 +32,7 @@ export const Navbar = () => {
                         </SignInButton>
                         <SignInButton mode="modal">
                             <Button size="sm">
-                                Get Scribe Free
+                                Get Secondbrain Free
                             </Button>
                         </SignInButton>
                     </>
@@ -41,7 +41,7 @@ export const Navbar = () => {
                     <>
                         <Button variant="ghost" size="sm">
                             <Link href="/documents">
-                                Enter Scribe
+                                Enter Secondbrain
                             </Link>
                         </Button>
                         <UserButton afterSignOutUrl="/">
