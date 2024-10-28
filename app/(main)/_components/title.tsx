@@ -6,8 +6,6 @@ import {api} from "@/convex/_generated/api";
 import {useRef, useState} from "react";
 import {Input} from "@/components/ui/input";
 import {Button} from "@/components/ui/button";
-import {Simulate} from "react-dom/test-utils";
-import input = Simulate.input;
 import {Skeleton} from "@/components/ui/skeleton";
 
 interface TitleProps {
@@ -44,7 +42,7 @@ export const Title = ({
     });
   };
 
-  const onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+  const onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       disabledInput();
     }
@@ -52,7 +50,7 @@ export const Title = ({
 
   return (
     <div className="flex items-center gap-x-1">
-      {!!initialData && <p>{initialData.icon}</p>}
+      {!!initialData.icon && <p>{initialData.icon}</p>}
       {isEditing ? (
         <Input
           ref={inputRef}
