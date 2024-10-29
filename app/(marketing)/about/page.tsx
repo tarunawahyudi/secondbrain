@@ -39,7 +39,11 @@ export default function Page() {
           If you appreciate my work on Secondbrain, you can show your support by donating through the Buy Me a Coffee button below
         </p>
         <Button className="bg-yellow-400 font-semibold" asChild>
-          <Link href="https://buymeacoffee.com/tarunawahyudi" target="_blank">
+          <Link
+            href="https://buymeacoffee.com/tarunawahyudi"
+            target="_blank"
+            className="text-gray-800 hover:text-white dark:hover:text-black"
+          >
             <Image
               width="18"
               height="18"
