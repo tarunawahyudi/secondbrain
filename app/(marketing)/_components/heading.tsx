@@ -35,12 +35,10 @@ export const Heading = () => {
             )}
             {!isAuthenticated && !isLoading && (
                 <SignInButton mode="modal">
-                  <div className="hidden md:block">
-                    <Button>
-                      Get Secondbrain Free
-                      <ArrowRight className="h-4 w-4 ml-2"/>
-                    </Button>
-                  </div>
+                  <Button>
+                    Get Secondbrain Free
+                    <ArrowRight className="h-4 w-4 ml-2"/>
+                  </Button>
                 </SignInButton>
             )}
         </div>

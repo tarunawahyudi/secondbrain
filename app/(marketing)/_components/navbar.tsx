@@ -9,6 +9,7 @@ import {SignInButton, UserButton} from "@clerk/clerk-react";
 import {Button} from "@/components/ui/button";
 import {Spinner} from "@/components/spinner";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Navbar = () => {
     const { isAuthenticated, isLoading} = useConvexAuth();
@@ -31,10 +32,29 @@ export const Navbar = () => {
                             </Button>
                         </SignInButton>
                         <SignInButton mode="modal">
-                            <Button size="sm">
+                            <Button size="sm" className="hidden md:block">
                                 Get Secondbrain Free
                             </Button>
                         </SignInButton>
+                        <Link href="/" className="flex md:hidden items-center gap-x-2">
+                            <Image
+                              src="/logo.svg"
+                              height="40"
+                              width="40"
+                              alt="Logo"
+                              className="dark:hidden"
+                            />
+                            <Image
+                              src="/logo-dark.svg"
+                              height="40"
+                              width="40"
+                              alt="Logo"
+                              className="hidden dark:block"
+                            />
+                            <p className={cn("font-semibold")}>
+                                Secondbrain
+                            </p>
+                        </Link>
                     </>
                 )}
                 {isAuthenticated && !isLoading && (
