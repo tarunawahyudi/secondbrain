@@ -5,8 +5,8 @@ export default {
       applicationID: "convex",
     },
     {
-      domain: "https://github.com",
-      applicationID: "1038737",
+      domain: "https://clerk.secondbrain.dev",
+      applicationID: "convex",
     }
   ]
 }
