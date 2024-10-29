@@ -33,6 +33,12 @@ export const metadata: Metadata = {
       href: "/logo-dark.svg",
     },
   ],
+  authors: [
+    {
+      name: "Taruna Wahyudi",
+      url: "https://tarunawahyudi.github.io"
+    }
+  ]
 };
 
 export default function RootLayout({
