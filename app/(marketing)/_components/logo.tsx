@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const font = Poppins({
     subsets: ["latin"],
@@ -10,7 +11,7 @@ const font = Poppins({
 
 export const Logo = () => {
     return (
-        <div className="hidden md:flex items-center gap-x-2">
+        <Link href="/" className="hidden md:flex items-center gap-x-2">
             <Image
                 src="/logo.svg"
                 height="40"
@@ -28,6 +29,6 @@ export const Logo = () => {
             <p className={cn("font-semibold", font.className)}>
                 Secondbrain
             </p>
-        </div>
+        </Link>
     )
 }
