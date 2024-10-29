@@ -42,7 +42,7 @@ export default function Page() {
           <Link
             href="https://buymeacoffee.com/tarunawahyudi"
             target="_blank"
-            className="text-gray-800 hover:text-white dark:hover:text-black"
+            className="text-black hover:text-white dark:hover:text-black"
           >
             <Image
               width="18"
