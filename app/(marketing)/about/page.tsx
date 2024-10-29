@@ -38,12 +38,8 @@ export default function Page() {
         <p className="mb-4 text-gray-700 dark:text-gray-300">
           If you appreciate my work on Secondbrain, you can show your support by donating through the Buy Me a Coffee button below
         </p>
-        <Button className="bg-yellow-400 font-semibold" asChild>
-          <Link
-            href="https://buymeacoffee.com/tarunawahyudi"
-            target="_blank"
-            className="text-black hover:text-white dark:hover:text-black"
-          >
+        <Button className="bg-yellow-400 font-semibold text-black hover:text-white dark:hover:text-black" asChild>
+          <Link href="https://buymeacoffee.com/tarunawahyudi" target="_blank">
             <Image
               width="18"
               height="18"
