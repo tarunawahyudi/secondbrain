@@ -1,6 +1,6 @@
 "use client";
 
-import {ChevronsLeft, MenuIcon, Plus, PlusCircle, Search, Settings, Trash} from "lucide-react";
+import {ChevronsLeft, MenuIcon, Plus, PlusCircle, Search, Settings, Trash, Palette} from "lucide-react";
 import {ElementRef, useEffect, useRef, useState} from "react";
 import { useMediaQuery } from "usehooks-ts";
 import {useParams, usePathname, useRouter} from "next/navigation";
@@ -123,6 +123,12 @@ export const Navigation = () => {
     });
   }
 
+  const handleDesignMenu = () => {
+    const designUrl = process.env.NEXT_PUBLIC_DESIGN_URL;
+    if (designUrl) router.push(designUrl)
+    else console.error('URL is not found')
+  }
+
   return (
       <>
         <aside ref={sidebarRef}
@@ -148,6 +154,11 @@ export const Navigation = () => {
               icon={Search}
               isSearch
               onClick={search.onOpen}
+            />
+            <Item
+              label="Design"
+              icon={Palette}
+              onClick={handleDesignMenu}
             />
             <Item
               label="Settings"
